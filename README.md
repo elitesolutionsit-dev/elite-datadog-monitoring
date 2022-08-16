@@ -30,3 +30,7 @@ all:
 Run command:
 
 `ansible-playbook datadog.yml -i datadog-inventory.yml -vvvv`
+
+
+# documentation reference
+https://elitesolutionit.atlassian.net/wiki/spaces/~62334c2d1c09d2007014fa00/pages/1114280/datadog+install+on+ubuntu+with+ansible
