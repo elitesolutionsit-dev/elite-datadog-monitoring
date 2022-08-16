@@ -9,11 +9,13 @@ Run command:
 `ansible-galaxy install datadog.datadog`
 
 ```
-- hosts: servers
+- hosts: dev
   roles:
     - { role: datadog.datadog, become: yes }
   vars:
-    datadog_api_key: "< Your datadog Api key>"
+    datadog_api_key: 
+    with_items:
+       - "{{ datadog_api_key }}"
 ```
 
 # inventory file
