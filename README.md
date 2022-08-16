@@ -3,7 +3,9 @@ Datadog is a monitoring and analytics tool for information technology (IT) and D
 
 Datadog monitoring software is available for deployment on premises or as a software as a service (SaaS). Datadog supports Windows, Linux, and Mac operating systems. Support for cloud service providers includes AWS, Microsoft Azure, Red Hat OpenShift and Google Cloud Platform.
 
-## Install the Datadog role from Ansible Galaxy on your Ansible server:
+# Install the Datadog role from Ansible Galaxy on your Ansible server:
+Run command:
+
 `ansible-galaxy install datadog.datadog`
 
 ```
@@ -14,7 +16,7 @@ Datadog monitoring software is available for deployment on premises or as a soft
     datadog_api_key: "< Your datadog Api key>"
 ```
 
-## inventory file
+# inventory file
 ```
 ---
 all:
@@ -24,5 +26,7 @@ all:
         dev:
           ansible_host: <EC2IPHOST>
 ```
-Run the playbook
+# Run the playbook
+Run command:
+
 `ansible-playbook datadog.yml -i datadog-inventory.yml -vvvv`
